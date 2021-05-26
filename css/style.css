@@ -1,0 +1,9 @@
+
+body {
+    background-image: url("../img/synths.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    background-size: cover;
+   }
