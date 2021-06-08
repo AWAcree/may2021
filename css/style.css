@@ -61,9 +61,20 @@ footer {
 @media screen and (min-width: 800px){
 
     main {
-        flex-direction: row;
+        flex-direction: column;
     }
     .column {
         width: 28%;
         }
+}
+@media screen and (min-width: 801px){
+    main {
+        flex-direction: row;
+        
+    }
+    .column {
+
+        font-family: 'Baloo Tammudu 2', cursive;
+        }
+
 }
