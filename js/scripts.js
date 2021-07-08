@@ -1,10 +1,16 @@
 //find element on web page
 const actionButton = document.getElementById("action-btn");
 
-//perform action on click event
-actionButton.addEventListener("click", performActionOnClick)
-
+// Finding navigation buttons
+const amandaButton = document.getElementById('amanda-container');
 const listItems = document.getElementById('list-items'); //entry point for list items
+const navMenu = document.getElementById('nav-menu');
+
+//perform action on click event
+actionButton.addEventListener("click", performActionOnClick);
+amandaButton.addEventListener("click", showNavMenuOnClick);
+
+
 const dataCollection = [];
 
 //function definition
@@ -29,5 +35,15 @@ function addItemAndRenderList(dataCollection) {
 
         listItem.appendChild(textValueForListItem);
         listItems.appendChild(listItem);
+    }
+}
+
+// This is menu prep/crap
+function showNavMenuOnClick() {
+    if(!navMenu.style.display) { // equal to (navMenu.style.display === '')
+        navMenu.style.display = 'flex'
+    } else {
+        navMenu.style.display = '';
+    
     }
 }
